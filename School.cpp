@@ -1,5 +1,4 @@
 #include<iostream>
-#include<fstream>
 using namespace std;
 #define max_st 100
 
@@ -308,4 +307,5 @@ void DeleteStudent()
         cout << "\nStudent not found.\n";
     }
 }
+
 
