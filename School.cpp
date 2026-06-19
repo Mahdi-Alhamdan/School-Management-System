@@ -41,9 +41,9 @@ int main()
 		cout << "\nEnter your choice: ";
 		while(!(cin >> ch))
 		{
+			ClearInput();
 			cout << "Only numbers allowed!\nEnter your choice: ";
 			cin >> ch;
-			ClearInput();
 		}
 
 		switch(ch)
@@ -119,16 +119,16 @@ void AddStudent()
     cout << "Enter student's ID: ";
     while(!(cin >> database[st_count].ID))
     {
+		ClearInput();
         cout << "Only numbers allowed!\nEnter student's ID: ";
         cin >> database[st_count].ID;
-        ClearInput();
     }
     
     while(CountDigit(database[st_count].ID) != 9)
     {
+		ClearInput();
         cout << "ID must be 9 digits!\nEnter student's ID: ";
         cin >> database[st_count].ID;
-        ClearInput();
     }
     
     if(AlreadyExist(database[st_count].ID))
@@ -140,9 +140,9 @@ void AddStudent()
     cout << "Enter student's GPA: ";
     while(!(cin >> database[st_count].GPA))
     {
+		ClearInput();
         cout << "Only numbers allowed!\nEnter student's ID: ";
         cin >> database[st_count].GPA;
-        ClearInput();
     }
     
     st_count++;
@@ -180,9 +180,9 @@ void ShowStudent()
     cout << "Enter Id to search: ";
     while(!(cin >> SearchID))
     {
+		ClearInput();
         cout << "Only numbers allowed!\nEnter ID to search: ";
         cin >> SearchID;
-        ClearInput();
     }
     
     for(int i = 0; i < st_count; i++)
@@ -216,9 +216,9 @@ void UpdateStudentInfo()
     cout << "Enter Id to search: ";
     while(!(cin >> SearchID))
     {
+		ClearInput();
         cout << "Only numbers allowed!\nEnter ID to search: ";
         cin >> SearchID;
-        ClearInput();
     }
     
     for(int i = 0; i < st_count; i++)
@@ -233,16 +233,16 @@ void UpdateStudentInfo()
             cout << "Enter new ID: ";
             while(!(cin >> database[i].ID))
             {
+				ClearInput();
                 cout << "Only numbers allowed!\nEnter new ID: ";
                 cin >> database[i].ID;
-                ClearInput();
             }
             
             while(CountDigit(database[i].ID) != 9)
             {
+				ClearInput();
                 cout << "ID must be 9 digits!\nEnter student's ID: ";
                 cin >> database[i].ID;
-                ClearInput();
             }
             
             if(AlreadyExist(database[i].ID))
@@ -253,9 +253,9 @@ void UpdateStudentInfo()
             cout << "Enter new GPA: ";
             while(!(cin >> database[i].GPA))
             {
+				ClearInput();
                 cout << "Only numbers allowed!\nEnter new ID: ";
                 cin >> database[i].GPA;
-                ClearInput();
             }
             
             cout << "\nStudent info have updated.\n";
@@ -282,9 +282,9 @@ void DeleteStudent()
     cout << "Enter ID to search: ";
     while(!(cin >> SearchID))
     {
+		ClearInput();
         cout << "Only numbers allowed!\nEnter ID to search: ";
         cin >> SearchID;
-        ClearInput();
     }
     
     for(int i = 0; i < st_count; i++)
