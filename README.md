@@ -1,2 +1,3 @@
 A simple Student Management System implemented in C++ that supports essential features including adding, deleting, updating, viewing a single student's details, and displaying the entire student list.
+
 مشروع نظام بسيط لإدارة الطلاب بلغة C++، يدعم العمليات الأساسية لإدارة البيانات (CRUD)، حيث يتيح: إضافة طالب جديد، تعديل بيانات طالب، حذف طالب، استعراض بيانات طالب معين، وعرض قائمة بجميع الطلاب المسجلين عبر الشاشة النصية (CLI).
