@@ -67,7 +67,7 @@ int main()
 		    cout << "\nYou exited the system succesfully.";
 		    break;
 		default:
-		    cout << "\nInvalid entry!\n";
+		    cout << "\nInvalid input!\n";
 		}
 	}
 	while(ch != 0);
@@ -238,14 +238,14 @@ void UpdateStudentInfo()
                 ClearInput();
             }
             
-            while(CountDigit(database[st_count].ID) != 9)
+            while(CountDigit(database[i].ID) != 9)
             {
                 cout << "ID must be 9 digits!\nEnter student's ID: ";
-                cin >> database[st_count].ID;
+                cin >> database[i].ID;
                 ClearInput();
             }
             
-            if(AlreadyExist(database[st_count].ID))
+            if(AlreadyExist(database[i].ID))
             {
                 cout << "Student already exist.\n";
                 return;
